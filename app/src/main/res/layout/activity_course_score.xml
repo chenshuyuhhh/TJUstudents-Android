@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/course_search_et_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="62dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:text="课程的分数分析"
+                android:textColor="#eeeeee"
+                android:textColorHint="#c1e3d6"
+                android:textCursorDrawable="@color/colorLoginWhite"
+                android:textSize="19sp" />
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/course_score_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="8dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/course_tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/colorDarkGrey"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@id/course_tv_cid"
+                    app:layout_constraintLeft_toRightOf="@id/course_tv_cid"
+                    app:layout_constraintTop_toTopOf="@id/course_tv_cid"
+                    tool:text="数学" />
+
+                <TextView
+                    android:id="@+id/course_tv_avg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@id/course_tv_name"
+                    app:layout_constraintLeft_toRightOf="@id/course_tv_name"
+                    app:layout_constraintTop_toTopOf="@id/course_tv_name"
+                    tool:text="数学" />
+
+                <TextView
+                    android:id="@+id/course_tv_cid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="38dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/course_cid_line"
+                    android:textColor="@color/colorLightGrey"
+                    android:textSize="17sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tool:text="1" />
+
+                <TextView
+                    android:id="@+id/course_tv_teacher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="18sp"
+                    app:layout_constraintLeft_toLeftOf="@+id/course_tv_cid"
+                    app:layout_constraintTop_toBottomOf="@id/course_tv_cid"
+                    tool:text="教师：陈老师" />
+
+                <TextView
+                    android:id="@+id/course_tv_credit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="172dp"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="@id/course_tv_teacher"
+                    app:layout_constraintLeft_toLeftOf="@+id/course_tv_teacher"
+                    app:layout_constraintTop_toTopOf="@id/course_tv_teacher"
+                    tool:text="学分：2.0" />
+
+                <TextView
+                    android:id="@+id/course_tv_suitgrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="42dp"
+                    android:layout_marginBottom="16dp"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@+id/course_tv_cid"
+                    app:layout_constraintTop_toBottomOf="@id/course_tv_cid"
+                    tool:text="适合的年级：大二" />
+
+                <TextView
+                    android:id="@+id/course_tv_cancelyear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="172dp"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="@id/course_tv_suitgrade"
+                    app:layout_constraintLeft_toLeftOf="@+id/course_tv_suitgrade"
+                    app:layout_constraintTop_toTopOf="@id/course_tv_suitgrade"
+                    tool:text="取消年份：2020 年" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/score_cv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="5dp"
+            app:cardCornerRadius="6dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:id="@+id/belowsix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/_60"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/sixseven"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="@string/_60_70"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/belowsix"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/belowsix" />
+
+                <TextView
+                    android:id="@+id/seveneight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:text="@string/_70_80"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/sixseven"
+                    app:layout_constraintLeft_toRightOf="@id/sixseven"
+                    app:layout_constraintTop_toTopOf="@id/sixseven" />
+
+                <TextView
+                    android:id="@+id/eightnine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/_80_90"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="16sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/belowsix" />
+
+                <TextView
+                    android:id="@+id/nineten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_90_100"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/eightnine"
+                    app:layout_constraintLeft_toLeftOf="@+id/sixseven"
+                    app:layout_constraintTop_toTopOf="@id/eightnine" />
+
+                <TextView
+                    android:id="@+id/ten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_100"
+                    android:textColor="@color/colorGrey"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/nineten"
+                    app:layout_constraintLeft_toLeftOf="@id/seveneight"
+                    app:layout_constraintTop_toTopOf="@id/nineten" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <!--<com.idtk.smallchart.chart.CombineChart-->
+        <!--android:id="@+id/score_combineChart"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+        <!--<com.lixs.charts.BarChart.LBarChartView-->
+        <!--android:id="@+id/frameNewBase"-->
+        <!--android:layout_width="350dp"-->
+        <!--android:layout_height="300dp"-->
+        <!--app:barShowNumber="6"-->
+        <!--app:borderColor="@color/colorAccent"-->
+        <!--app:bottomTextSpace="20dp"-->
+        <!--app:dataTextColor="@color/colorPrimaryDark"-->
+        <!--app:dataTextSize="12sp"-->
+        <!--app:descriptionTextColor="@color/colorPrimary"-->
+        <!--app:descriptionTextSize="20sp"-->
+        <!--app:isClickAnimation="true"-->
+        <!--app:labelTextColor="@color/colorPrimary"-->
+        <!--app:labelTextSize="10sp"-->
+        <!--app:leftTextSpace="30dp"-->
+        <!--app:title="柱状图实例"-->
+        <!--app:titleTextColor="@color/colorPrimaryDark"-->
+        <!--app:titleTextSize="20sp"-->
+        <!--app:topTextSpace="50dp" />-->
+
+        <com.lixs.charts.BarChart.LBarChartView
+            android:id="@+id/frameNewBase"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:barShowNumber="6"
+            app:borderColor="@color/colorPrimaryDark"
+            app:bottomTextSpace="20dp"
+            app:dataTextColor="@color/colorPrimaryDark"
+            app:dataTextSize="12sp"
+            app:descriptionTextColor="@color/colorPrimary"
+            app:descriptionTextSize="20sp"
+            app:isClickAnimation="true"
+            app:labelTextColor="@color/colorPrimary"
+            app:labelTextSize="10sp"
+            app:leftTextSpace="30dp"
+            app:title="各段成绩分布"
+            app:titleTextColor="@color/colorPrimaryDark"
+            app:titleTextSize="20sp"
+            app:topTextSpace="50dp" />
+
+        <com.lixs.charts.RadarChartView
+            android:id="@+id/radarView"
+            android:layout_width="350dp"
+            android:layout_height="340dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            app:classNumber="3"
+            app:dataBackColor="@color/colorPrimaryDark"
+            app:itemTextColor="@color/colorAccent"
+            app:itemTextSize="16dp"
+            app:polygonNumber="8" />
+
+        <com.lixs.charts.LineChartView
+            android:id="@+id/lineView"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_height="300dp"
+            app:labelTextSize="10dp"
+            app:title="折线图"
+            app:titleTextSize="20dp"
+            android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TJUstudents</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="tju">TJU</string>
+    <string name="manage">Manage</string>
+    <string name="bottom_line">我是底线</string>
+    <string name="_60"><![CDATA[<60]]></string>
+    <string name="_60_70">[60,70)</string>
+    <string name="_70_80">[70,80)</string>
+    <string name="_80_90">[80,90)</string>
+    <string name="_90_100">[90,100)</string>
+    <string name="_100">100</string>
+</resources>

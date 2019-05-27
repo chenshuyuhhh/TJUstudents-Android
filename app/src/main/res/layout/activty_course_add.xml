@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/select_course_tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="安排课程"
+        android:textColor="#0E3A5E"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="28dp"/>
+
+    <TextView
+        android:id="@+id/select_course_tv_cid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="> 课程编号"
+        android:textSize="18sp"
+        android:textColor="@color/colorDarkGrey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="36dp"
+        app:layout_constraintTop_toBottomOf="@id/select_course_tv_title"
+        android:layout_marginTop="18dp" />
+
+    <EditText
+        android:id="@+id/select_course_et_cid"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:background="@drawable/select_course_cid_line"
+        app:layout_constraintLeft_toLeftOf="@id/select_course_tv_cid"
+        app:layout_constraintTop_toBottomOf="@+id/select_course_tv_cid"
+        android:layout_marginTop="8dp"
+        android:paddingStart="14dp"/>
+
+    <TextView
+        android:id="@+id/select_course_tv_cname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="> 课程名称"
+        android:textSize="18sp"
+        android:textColor="@color/colorDarkGrey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="36dp"
+        app:layout_constraintTop_toBottomOf="@id/select_course_et_cid"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:id="@+id/select_course_et_cname"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:background="@drawable/select_course_cid_line"
+        app:layout_constraintLeft_toLeftOf="@id/select_course_tv_cname"
+        app:layout_constraintTop_toBottomOf="@+id/select_course_tv_cname"
+        android:layout_marginTop="8dp"
+        android:paddingStart="14dp"/>
+
+    <TextView
+        android:id="@+id/select_course_tv_teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="> 任课老师姓名"
+        android:textSize="18sp"
+        android:textColor="@color/colorDarkGrey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="36dp"
+        app:layout_constraintTop_toBottomOf="@id/select_course_et_cname"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:id="@+id/select_course_et_teacher"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:background="@drawable/select_course_cid_line"
+        app:layout_constraintLeft_toLeftOf="@id/select_course_tv_teacher"
+        app:layout_constraintTop_toBottomOf="@+id/select_course_tv_teacher"
+        android:layout_marginTop="8dp"
+        android:paddingStart="14dp"/>
+
+    <TextView
+        android:id="@+id/select_course_tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="> 课程学分"
+        android:textSize="18sp"
+        android:textColor="@color/colorDarkGrey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="36dp"
+        app:layout_constraintTop_toBottomOf="@id/select_course_et_teacher"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:id="@+id/select_course_et_score"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:background="@drawable/select_course_cid_line"
+        app:layout_constraintLeft_toLeftOf="@id/select_course_tv_score"
+        app:layout_constraintTop_toBottomOf="@+id/select_course_tv_score"
+        android:layout_marginTop="8dp"
+        android:paddingStart="14dp"/>
+
+    <TextView
+        android:id="@+id/select_course_tv_grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="> 课程适合的年级"
+        android:textSize="18sp"
+        android:textColor="@color/colorDarkGrey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="36dp"
+        app:layout_constraintTop_toBottomOf="@id/select_course_et_score"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:id="@+id/select_course_et_grade"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:background="@drawable/select_course_cid_line"
+        app:layout_constraintLeft_toLeftOf="@id/select_course_tv_grade"
+        app:layout_constraintTop_toBottomOf="@+id/select_course_tv_grade"
+        android:layout_marginTop="8dp"
+        android:paddingStart="14dp"/>
+
+    <TextView
+        android:id="@+id/select_course_tv_cancle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="> 课程取消的年份"
+        android:textSize="18sp"
+        android:textColor="@color/colorDarkGrey"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginStart="36dp"
+        app:layout_constraintTop_toBottomOf="@id/select_course_et_grade"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:id="@+id/select_course_et_cancle"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:background="@drawable/select_course_cid_line"
+        app:layout_constraintLeft_toLeftOf="@id/select_course_tv_cancle"
+        app:layout_constraintTop_toBottomOf="@+id/select_course_tv_cancle"
+        android:layout_marginTop="8dp"
+        android:paddingStart="14dp"/>
+
+    <!--<Button-->
+    <!--android:layout_width="100dp"-->
+    <!--android:layout_height="35dp"-->
+    <!--android:text="确认选课"-->
+    <!--android:textColor="@color/colorLogin"-->
+    <!--android:textSize="16sp"-->
+    <!--android:background="@color/colorLoginWhite"-->
+    <!--app:layout_constraintTop_toBottomOf="@id/select_course_et_year"-->
+    <!--android:layout_marginTop="20dp"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--android:layout_marginEnd="20dp"/>-->
+
+    <ImageView
+        android:id="@+id/course_sub"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:textColor="@color/colorLogin"
+        android:textSize="16sp"
+        android:background="@drawable/ic_sub2"
+        app:layout_constraintTop_toBottomOf="@id/select_course_et_cancle"
+        android:layout_marginTop="20dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginEnd="34dp"/>
+
+</android.support.constraint.ConstraintLayout>

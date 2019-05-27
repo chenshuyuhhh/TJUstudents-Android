@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chenshuyusc.tjustudents">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Login.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Manage.Home.HomeManageActivity"
+            android:theme="@style/AppTheme.Normal"></activity>
+        <activity
+            android:name=".Student.Home.HomeStudentActivity"
+            android:theme="@style/AppTheme.Normal"></activity>
+        <activity
+            android:name=".Manage.Course.Home.CourseActivity"
+            android:theme="@style/AppTheme.Normal"></activity>
+        <activity
+            android:name=".Manage.Selection.Home.SelectionActivity"
+            android:theme="@style/AppTheme.Normal"></activity>
+        <activity
+            android:name=".Manage.Student.studentHome.StudentActivity"
+            android:theme="@style/AppTheme.Normal"></activity>
+        <activity
+            android:name=".Manage.Selection.Detail.SelectionDetailActivity"
+            android:theme="@style/AppTheme.Normal"></activity>
+        <activity
+            android:name=".Manage.Student.studentSearch.StudentSearchActivity"
+            android:theme="@style/AppTheme.Normal"></activity>
+        <activity
+            android:name=".Manage.Student.StudentDetail.StuDetailActivity"
+            android:theme="@style/AppTheme.Normal"></activity>
+        <activity
+            android:name=".Manage.Selection.Search.SelectSearchActivity"
+            android:theme="@style/AppTheme.Normal"></activity>
+        <activity
+            android:name=".Manage.Course.Search.CourseSearchActivity"
+            android:theme="@style/AppTheme.Normal"></activity>
+
+        <activity
+            android:name=".Manage.Course.Detail.CourseDetailActivity"
+            android:theme="@style/AppTheme.Normal"></activity>
+        <activity
+            android:name=".Manage.Course.score.ScoreActivity"
+            android:theme="@style/AppTheme.Normal"></activity>
+        <activity android:name=".Manage.ClassName.ClassesActivity"></activity>
+    </application>
+
+    <!--上网功能的权限-->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+</manifest>

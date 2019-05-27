@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/select_search_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/student_search_iv_back"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/student_search_et_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="62dp"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:paddingStart="12dp"
+                android:paddingEnd="10dp"
+                android:singleLine="true"
+                android:text="查询课程分数"
+                android:textColor="#eeeeee"
+                android:textColorHint="#c1e3d6"
+                android:textCursorDrawable="@color/colorLoginWhite"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/student_search_iv_icon"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginEnd="12dp"
+                android:contentDescription="搜索"
+                android:padding="12dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_search3"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tv_sid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="18dp"
+        android:text="学生学号"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="19sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/select_search_toolbar" />
+
+    <TextView
+        android:id="@+id/tv_sname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="学生姓名"
+        android:textColor="@color/colorLightGrey"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_sid"
+        app:layout_constraintLeft_toRightOf="@+id/tv_sid"
+        app:layout_constraintTop_toTopOf="@+id/tv_sid" />
+
+    <EditText
+        android:id="@+id/et_sid"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/select_course_cid_line"
+        android:textColor="@color/colorGrey"
+        android:textSize="19sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_sid" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_sname"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginTop="30dp"-->
+    <!--android:text="学生姓名"-->
+    <!--android:textColor="@color/colorGrey"-->
+    <!--android:textSize="19sp"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/tv_sid" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/et_sname"-->
+    <!--android:layout_width="200dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:background="@drawable/select_course_cid_line"-->
+    <!--android:textColor="@color/colorGrey"-->
+    <!--android:textSize="19sp"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/tv_sname"-->
+    <!--app:layout_constraintLeft_toRightOf="@+id/tv_sname"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/tv_sname" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_cid"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:layout_marginTop="30dp"-->
+    <!--android:text="课程编号"-->
+    <!--android:textColor="@color/colorGrey"-->
+    <!--android:textSize="19sp"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/tv_sname" />-->
+
+    <!--<EditText-->
+    <!--android:id="@+id/et_cid"-->
+    <!--android:layout_width="200dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="20dp"-->
+    <!--android:background="@drawable/select_course_cid_line"-->
+    <!--android:textColor="@color/colorGrey"-->
+    <!--android:textSize="19sp"-->
+    <!--app:layout_constraintBottom_toBottomOf="@+id/tv_cid"-->
+    <!--app:layout_constraintLeft_toRightOf="@+id/tv_cid"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/tv_cid" />-->
+
+    <TextView
+        android:id="@+id/tv_cid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:text="课程编号"
+        android:textColor="@color/colorDarkGrey"
+        android:textSize="19sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_sid" />
+
+    <TextView
+        android:id="@+id/tv_cname"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="课程名称"
+        android:textColor="@color/colorLightGrey"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_cid"
+        app:layout_constraintLeft_toRightOf="@+id/tv_cid"
+        app:layout_constraintTop_toTopOf="@+id/tv_cid" />
+
+    <EditText
+        android:id="@+id/et_cname"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/select_course_cid_line"
+        android:textColor="@color/colorGrey"
+        android:textSize="19sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cname" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/student_search_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_cname">
+
+    </android.support.v7.widget.RecyclerView>
+
+</android.support.constraint.ConstraintLayout>

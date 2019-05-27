@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#FA42403C</color>-->
+    <!--<color name="colorPrimaryDark">#FA383633</color>-->
+    <!--<color name="colorAccent">#C4A969</color>-->
+    <!--<color name="colorLoginBack">#46433f</color>-->
+    <!--<color name="colorLogin">#eddaaa</color>-->
+    <!--<color name="colorLoginWhite">#EBE9DE</color>-->
+    <!--<color name="colorLoginText">#fcfcfe</color>-->
+    <!--<color name="colorLoginBlack">#99161513</color>-->
+    <color name="colorPrimary">#5FB4DB</color>
+    <color name="colorPrimaryDark">#4897BD</color>
+    <color name="colorAccent">#58B1E0</color>
+    <color name="colorLoginBack">#9BC6DB</color>
+    <color name="colorLogin">#7BACC4</color>
+    <color name="colorLoginWhite">#F3F9FC</color>
+    <color name="colorLoginText">#A8C9E4</color>
+    <color name="colorLightGrey">#BBC7CC</color>
+    <color name="colorGrey">#9CA3A5</color>
+    <color name="colorDarkGrey">#646F72</color>
+    <color name="colorBlack">#4F575F</color>
+</resources>
