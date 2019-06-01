@@ -27,7 +27,7 @@ object SelectionModel {
     }
 
     fun deleteSelection(
-        selction: String, callback: suspend (RefreshState<Unit>, selectionPage: SelectionPage?) -> Unit
+        selction: String, callback: suspend (RefreshState<Unit>, selection: sidSelection?) -> Unit
     ) {
         GlobalScope.launch(Dispatchers.Main) {
             RetrofitFactory.api.deleteSelection(selction).awaitAndHandle {

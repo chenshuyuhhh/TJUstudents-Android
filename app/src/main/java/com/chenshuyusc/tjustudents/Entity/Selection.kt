@@ -36,7 +36,7 @@ data class Data(
  */
 data class Selection(
     val cid: String,
-    val score: Int,
+    val score: Int?,
     val sid: String,
     val year: Int
 )

@@ -26,7 +26,7 @@ object RetrofitFactory {
     val retrofit: Retrofit = Retrofit.Builder()
         .client(client)
         .addConverterFactory(GsonConverterFactory.create())
-        .baseUrl("http://172.23.24.203:8888")
+        .baseUrl("http://172.23.125.203:8888")
         .addCallAdapterFactory(CoroutineCallAdapterFactory())
         .build()
 

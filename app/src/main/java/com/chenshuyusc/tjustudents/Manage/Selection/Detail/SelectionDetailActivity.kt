@@ -68,7 +68,7 @@ class SelectionDetailActivity : AppCompatActivity() {
     private fun update() {
         GlobalScope.launch(Dispatchers.Main) {
             val gson = Gson()
-            RetrofitFactory.api.updateStudent(gson.toJson(getSelection())).awaitAndHandle {
+            RetrofitFactory.api.updateSelection(gson.toJson(getSelection())).awaitAndHandle {
                 Toasty.error(this@SelectionDetailActivity, it.message.toString(), Toast.LENGTH_LONG, true).show()
             }?.let {
                 Toasty.info(this@SelectionDetailActivity, "更新成功", Toast.LENGTH_LONG, true).show()
@@ -89,6 +89,14 @@ class SelectionDetailActivity : AppCompatActivity() {
     }
 
     private fun getSelection(): Selection {
+        if (score.text.isEmpty()){
+            return Selection(
+                cid.text.toString(),
+                null,
+                sid.text.toString(),
+                year.text.toString().toInt()
+            )
+        }
         return Selection(
             cid.text.toString(),
             score.text.toString().toInt(),

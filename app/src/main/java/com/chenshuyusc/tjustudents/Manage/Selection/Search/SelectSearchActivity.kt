@@ -84,6 +84,7 @@ class SelectSearchActivity : AppCompatActivity(), SelecSearchView {
     }
 
     override fun onError(msg: String) {
+        rv.withItems { }
         Toasty.error(this, msg, Toast.LENGTH_LONG, true).show()
     }
 

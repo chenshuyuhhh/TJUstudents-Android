@@ -20,13 +20,13 @@ interface RetrofitService {
     fun getSelectionPage(@Query("page") page: Int, @Query("size") size: Int): Deferred<SelectionPage>
 
     @POST("${SELECTION}/update")
-    fun updateSelection(@Query("selection") selection: String): Deferred<SelectionPage>
+    fun updateSelection(@Query("selection") selection: String): Deferred<sidSelection>
 
     @POST("${SELECTION}/add")
-    fun addSelection(@Query("selection") selections: String): Deferred<SelectionPage>
+    fun addSelection(@Query("selection") selections: String): Deferred<sidSelection>
 
     @POST("${SELECTION}/deleteOne")
-    fun deleteSelection(@Query("selection") selection: String): Deferred<SelectionPage>
+    fun deleteSelection(@Query("selection") selection: String): Deferred<sidSelection>
 
     @GET("${SELECTION}/sid")
     fun getSelectionBySid(@Query("id") id: String): Deferred<sidSelection>
